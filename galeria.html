@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Galería | DESTHINNY</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            DESTHINNY
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="experiencias.html">Experiencias</a>
+            <a href="descubre.html">Descubre</a>
+            <a href="galeria.html" class="active">Galería</a>
+            <a href="sobre.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="section-label">
+            GALERÍA
+        </span>
+
+        <h1>
+            República Dominicana en imágenes
+        </h1>
+
+        <p>
+            Una sección preparada para organizar
+            fotografías y contenido audiovisual
+            de los lugares registrados.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="gallery-filters">
+
+            <button
+                class="gallery-filter active"
+                data-filter="todos">
+                Todos
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="playas">
+                Playas
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="naturaleza">
+                Naturaleza
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="cultura">
+                Cultura
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="historia">
+                Historia
+            </button>
+
+        </div>
+
+
+        <div
+            id="galleryGrid"
+            class="gallery-grid">
+        </div>
+
+    </div>
+
+</section>
+
+
+<div
+    class="lightbox hidden"
+    id="lightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Cerrar">
+        ×
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="">
+
+</div>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-bottom">
+        © 2026 DESTHINNY
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="data/destinos.js"></script>
+<script src="js/galeria.js"></script>
+
+</body>
+</html>

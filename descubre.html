@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Descubre | DESTHINNY</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            DESTHINNY
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="experiencias.html">Experiencias</a>
+            <a href="descubre.html" class="active">Descubre</a>
+            <a href="galeria.html">Galería</a>
+            <a href="sobre.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="section-label">
+            DESTHINNY
+        </span>
+
+        <h1>
+            Descubre lugares para explorar
+        </h1>
+
+        <p>
+            Responde algunas preguntas y encuentra
+            destinos relacionados con tus intereses.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container discover-layout">
+
+    <form id="discoverForm"
+          class="discover-form">
+
+        <div class="form-group">
+
+            <label for="experience">
+                ¿Qué quieres explorar?
+            </label>
+
+            <select id="experience" required>
+
+                <option value="">
+                    Selecciona una opción
+                </option>
+
+                <option value="playas">
+                    Playas
+                </option>
+
+                <option value="naturaleza">
+                    Naturaleza
+                </option>
+
+                <option value="aventura">
+                    Aventura
+                </option>
+
+                <option value="cultura">
+                    Cultura
+                </option>
+
+                <option value="historia">
+                    Historia
+                </option>
+
+                <option value="paisajes">
+                    Paisajes
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="regionPreference">
+                ¿Qué región te interesa?
+            </label>
+
+            <select id="regionPreference">
+
+                <option value="todos">
+                    Cualquiera
+                </option>
+
+                <option value="este">
+                    Este
+                </option>
+
+                <option value="norte">
+                    Norte
+                </option>
+
+                <option value="sur">
+                    Sur
+                </option>
+
+                <option value="noreste">
+                    Noreste
+                </option>
+
+                <option value="central">
+                    Central
+                </option>
+
+                <option value="santo-domingo">
+                    Santo Domingo
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn btn-primary">
+
+            Mostrar resultados
+
+        </button>
+
+    </form>
+
+
+    <div
+        id="discoverResults"
+        class="discover-results">
+
+        <div class="discover-placeholder">
+
+            <h2>
+                Tu búsqueda aparecerá aquí.
+            </h2>
+
+            <p>
+                Selecciona tus intereses para comenzar.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-bottom">
+        © 2026 DESTHINNY
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="data/destinos.js"></script>
+<script src="js/descubre.js"></script>
+
+</body>
+</html>
